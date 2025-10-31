@@ -2,13 +2,13 @@ import React from 'react';
 
 const Mission: React.FC = () => {
     return (
-        <section className="py-20 md:py-28 bg-gray-900">
+        <section className="py-20 md:py-28 bg-gray-950">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                     Our Mission
                     <span className="font-bengali text-2xl md:text-3xl text-gray-400 block mt-1">আমাদের লক্ষ্য</span>
                 </h2>
-                <div className="max-w-3xl mx-auto mt-8 border-l-4 border-cyan-400 pl-6 text-left">
+                <div className="max-w-3xl mx-auto mt-8 border-l-4 border-cyan-500 pl-6 text-left">
                     <p className="text-2xl md:text-3xl font-semibold italic text-cyan-200">
                         “Your profit is our success.”
                         <span className="font-bengali text-xl md:text-2xl block mt-1 text-cyan-300">

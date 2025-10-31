@@ -36,7 +36,7 @@ const services = [
 
 const Services: React.FC = () => {
     return (
-        <section className="py-20 md:py-28 bg-gray-800/50">
+        <section className="py-20 md:py-28 bg-gray-900">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-white">
@@ -46,7 +46,7 @@ const Services: React.FC = () => {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <div key={index} className="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-cyan-500/20 transform hover:-translate-y-2 transition-all duration-300">
+                        <div key={index} className="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl hover:shadow-cyan-500/30 transform hover:-translate-y-2 transition-all duration-300">
                             <div className="flex items-center justify-center mb-6 bg-gray-700 h-20 w-20 rounded-full mx-auto">
                                 {service.icon}
                             </div>

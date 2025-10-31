@@ -9,7 +9,7 @@ const productBenefits = [
 
 const Products: React.FC = () => {
     return (
-        <section className="py-20 md:py-28 bg-gray-900">
+        <section className="py-20 md:py-28 bg-gray-950">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                     <div className="lg:w-1/2 text-center lg:text-left">
@@ -32,7 +32,7 @@ const Products: React.FC = () => {
                         <img 
                             src="https://picsum.photos/seed/products/500/350"
                             alt="Software product showcase"
-                            className="rounded-lg shadow-2xl shadow-cyan-500/20"
+                            className="rounded-lg shadow-2xl shadow-cyan-500/30"
                         />
                     </div>
                 </div>

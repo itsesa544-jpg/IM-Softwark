@@ -30,7 +30,7 @@ const App: React.FC = () => {
     };
 
     return (
-        <div className="bg-gray-900 text-gray-100 min-h-screen antialiased">
+        <div className="bg-gray-950 text-gray-100 min-h-screen antialiased">
             <Header refs={sectionRefs} scrollToSection={scrollToSection} />
             <main>
                 <div ref={homeRef}>
