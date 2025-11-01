@@ -6,6 +6,7 @@ import Services from './components/Services';
 import AboutMe from './components/AboutMe';
 import Products from './components/Products';
 import Donation from './components/Donation';
+import CommentSection from './components/CommentSection';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -14,6 +15,7 @@ const App: React.FC = () => {
     const productsRef = useRef<HTMLDivElement>(null);
     const servicesRef = useRef<HTMLDivElement>(null);
     const donationRef = useRef<HTMLDivElement>(null);
+    const commentsRef = useRef<HTMLDivElement>(null);
     const contactRef = useRef<HTMLDivElement>(null);
 
     const sectionRefs = {
@@ -22,6 +24,7 @@ const App: React.FC = () => {
         products: productsRef,
         services: servicesRef,
         donation: donationRef,
+        comments: commentsRef,
         contact: contactRef,
     };
 
@@ -30,7 +33,7 @@ const App: React.FC = () => {
     };
 
     return (
-        <div className="bg-gray-950 text-gray-100 min-h-screen antialiased">
+        <div className="min-h-screen antialiased text-gray-100">
             <Header refs={sectionRefs} scrollToSection={scrollToSection} />
             <main>
                 <div ref={homeRef}>
@@ -48,6 +51,9 @@ const App: React.FC = () => {
                 </div>
                 <div ref={donationRef}>
                     <Donation />
+                </div>
+                <div ref={commentsRef}>
+                    <CommentSection />
                 </div>
                 <div ref={contactRef}>
                     {/* The contact section is integrated into the Footer */}

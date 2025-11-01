@@ -15,6 +15,7 @@ const Header: React.FC<HeaderProps> = ({ refs, scrollToSection }) => {
         { name: 'Products', ref: refs.products },
         { name: 'About Us', ref: refs.about },
         { name: 'Donate', ref: refs.donation },
+        { name: 'Comments', ref: refs.comments }, // New link
         { name: 'Contact Us', ref: refs.contact },
     ];
 
@@ -24,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ refs, scrollToSection }) => {
     };
 
     return (
-        <header className="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md shadow-lg shadow-cyan-500/20">
+        <header className="sticky top-0 z-50 bg-gray-950 shadow-lg shadow-cyan-500/20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex-shrink-0">

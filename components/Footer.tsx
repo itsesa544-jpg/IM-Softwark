@@ -14,6 +14,7 @@ const Footer: React.FC<FooterProps> = ({ refs, scrollToSection }) => {
         { name: 'Products', ref: refs.products },
         { name: 'Services', ref: refs.services },
         { name: 'Donate', ref: refs.donation },
+        { name: 'Comments', ref: refs.comments }, // New link
         { name: 'Contact Us', ref: refs.contact },
     ];
 
@@ -54,7 +55,7 @@ const Footer: React.FC<FooterProps> = ({ refs, scrollToSection }) => {
                     <div>
                         <h3 className="text-lg font-semibold text-white mb-4">Connect with Us</h3>
                         <p className="mb-4">
-                            <a href="mailto:im.softwark.team@gmail.com" className="hover:text-cyan-400 transition-colors">
+                            <a href="mailto:im.softwark.team@gmail.com" className="text-cyan-300 hover:text-cyan-400 transition-colors">
                                 im.softwark.team@gmail.com
                             </a>
                         </p>
